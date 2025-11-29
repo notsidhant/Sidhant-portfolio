@@ -1,25 +1,44 @@
-<section>
-   <h2>My Gallery</h2>
-   <img src="assets/images/photo1.jpg" width="300px">
-</section>
-<section class="gallery">
-  <h2>Memory Timeline</h2>
-  <div class="image-box">
-     <img src="assets/images/photo1.jpg" alt="memory">
-     <img src="assets/images/photo2.jpg" alt="memory">
-     <img src="assets/images/photo3.jpg" alt="memory">
-  </div>
-</section>
-<section class="slider-section">
-  <h2>Highlights</h2>
-  <div class="slider">
-    <img src="assets/images/slide1.jpg" class="slides active">
-    <img src="assets/images/slide2.jpg" class="slides">
-    <img src="assets/images/slide3.jpg" class="slides">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Gallery — Sidhant</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <canvas id="particles"></canvas>
+  <div id="loader"><div class="spinner"></div><p>Loading cool stuff...</p></div>
 
-    <div class="buttons">
-      <button onclick="prevSlide()">❮</button>
-      <button onclick="nextSlide()">❯</button>
+  <header class="nav-wrap">
+    <div class="container nav-inner">
+      <div class="brand">Sidhant</div>
+      <nav>
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="skills.html" class="nav-link">Skills</a>
+        <a href="gallery.html" class="nav-link active">Gallery</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
     </div>
-  </div>
-</section>
+  </header>
+
+  <main class="container content">
+    <section class="card">
+      <h2>Gallery</h2>
+      <div class="gallery-grid">
+        <!-- Replace with your actual images -->
+        <img src="assets/images/photo1.jpg" alt="My Photo 1" />
+        <img src="assets/images/photo2.jpg" alt="My Photo 2" />
+        <img src="assets/images/photo3.jpg" alt="My Photo 3" />
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">© <span id="year4"></span> Sidhant Singh Manral — Built as a student project</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
