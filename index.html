@@ -2,11 +2,18 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Sidhant Singh Manral — Portfolio</title>
+
+  <!-- Stylesheet -->
   <link rel="stylesheet" href="style.css">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
+
   <!-- Particle Background -->
   <canvas id="particles"></canvas>
 
@@ -15,115 +22,46 @@
     <div class="spinner"></div>
     <p>Loading cool stuff...</p>
   </div>
-  <section id="resume" style="padding: 70px 0; background: #0f1d47; color: #fff; text-align:center;">
-    <h2 style="font-size: 40px;">Resume</h2>
-    <a href="YOUR_RESUME_LINK.pdf" 
-       style="display:inline-block; margin-top:20px; padding:12px 25px; 
-       background:#1e90ff; color:#fff; border-radius:8px; text-decoration:none;">
-       Download Resume
-    </a>
-</section>
-  <section id="gallery" style="padding: 80px 0; background: #0c183a; color:#fff;">
-    <h2 style="text-align:center; font-size:40px;">Gallery</h2>
 
-    <div style="
-        display:grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap:20px;
-        max-width: 1000px;
-        margin: 40px auto;">
-
-        <img src="img/photo1.jpg" style="width:100%; border-radius:10px;">
-        <img src="img/photo2.jpg" style="width:100%; border-radius:10px;">
-        <img src="img/photo3.jpg" style="width:100%; border-radius:10px;">
-    </div>
-</section>
-  <section id="contact" style="padding: 80px 0; background:#0f1d47; color:#fff; text-align:center;">
-    <h2 style="font-size: 40px;">Contact</h2>
-
-    <p style="font-size: 18px;">Feel free to reach out to me!</p>
-
-    <div style="margin-top: 20px;">
-        <a href="https://www.linkedin.com/in/YOUR_LINK" style="color:#1e90ff; margin: 10px;">LinkedIn</a>
-        <a href="https://www.instagram.com/YOUR_USER" style="color:#ff4081; margin: 10px;">Instagram</a>
-        <a href="mailto:YOUR_EMAIL@gmail.com" style="color:#00d4ff; margin: 10px;">Email</a>
-    </div>
-</section>
-
-
-
-
-  <!-- Navigation -->
-  <header class="nav-wrap">
-    <div class="container nav-inner">
+  <!-- Navigation Bar -->
+  <header class="nav-container">
+    <div class="nav-content">
       <div class="brand">Sidhant</div>
       <nav>
-        <a href="index.html" class="nav-link active">Home</a>
-        <a href="about.html" class="nav-link">About</a>
-        <a href="skills.html" class="nav-link">Skills</a>
-        <a href="gallery.html" class="nav-link">Gallery</a>
-        <a href="contact.html" class="nav-link">Contact</a>
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
       </nav>
     </div>
   </header>
-  <section id="skills" style="padding: 80px 0; background: #0f1d47; color: #fff;">
-    <h2 style="text-align:center; font-size: 40px;">Skills</h2>
-
-    <div style="
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        gap: 20px;
-        max-width: 900px;
-        margin: 40px auto;
-        padding: 20px;">
-        
-        <div class="skill-card">HTML</div>
-        <div class="skill-card">CSS</div>
-        <div class="skill-card">JavaScript</div>
-        <div class="skill-card">Python</div>
-        <div class="skill-card">Problem Solving</div>
-        <div class="skill-card">Communication</div>
-    </div>
-</section>
-
-<style>
-.skill-card {
-    background: rgba(255, 255, 255, 0.1);
-    padding: 20px;
-    text-align: center;
-    border-radius: 10px;
-    font-size: 18px;
-    transition: 0.3s;
-}
-.skill-card:hover {
-    background: rgba(255, 255, 255, 0.2);
-    transform: translateY(-5px);
-}
-</style>
-
 
   <!-- Hero Section -->
-  <section class="hero container">
+  <section id="home" class="hero-section">
     <div class="hero-left">
-      <h1 id="typing" class="hero-title"></h1>
-      <p class="hero-sub">I’m <strong>Sidhant Singh Manral</strong> — a student at Fr. Conceicao Rodrigues College of Engineering.</p>
+      <h1 class="hero-title">Hello, I'm <span>Sidhant Singh Manral</span></h1>
+      <p class="hero-sub">
+        I’m a student at <strong>Fr. Conceicao Rodrigues College of Engineering</strong>, passionate about tech, creativity, and growth.
+      </p>
 
-      <div class="cta-row">
-        <a class="btn" href="about.html">Know more</a>
-        <a class="btn ghost" href="contact.html">Contact</a>
+      <div class="btn-row">
+        <a href="#about" class="btn">Know more</a>
+        <a href="#contact" class="btn ghost">Contact</a>
       </div>
 
-      <div class="socials">
-        <a href="https://www.linkedin.com/in/sidhant-singh-manral-15577238a" target="_blank" rel="noopener">LinkedIn</a>
-        <a href="https://www.instagram.com/_not_ur_sid?igsh=b2Jja3V4bDd2ZGw3" target="_blank" rel="noopener">Instagram</a>
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/sidhant-singh-manral-15577238a" target="_blank">LinkedIn</a>
+        <a href="https://www.instagram.com/_not_ur_sid" target="_blank">Instagram</a>
         <a href="mailto:notsidhant17@gmail.com">Email</a>
       </div>
     </div>
 
     <div class="hero-right">
-      <div class="card profile-card">
-        <img src="assets/images/profile-placeholder.jpg" alt="Sidhant" />
-        <div class="meta">
+      <div class="profile-card">
+        <img src="assets/images/profile-placeholder.jpg" alt="Sidhant">
+        <div class="profile-meta">
           <h3>Sidhant Singh Manral</h3>
           <p>Student, Fr. Conceicao Rodrigues College of Engineering</p>
           <p>Born: 17 Nov 2007 • 18 yrs</p>
@@ -131,64 +69,84 @@
       </div>
     </div>
   </section>
-<section id="projects" style="padding: 80px 0; background: #0c183a; color: #fff;">
-    <h2 style="text-align:center; font-size: 40px;">Projects</h2>
 
-    <div style="
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-        gap: 20px;
-        max-width: 1000px;
-        margin: 40px auto;">
-
-        <div class="project-card">
-            <h3>Portfolio Website</h3>
-            <p>A responsive personal website built using HTML, CSS, and JS.</p>
-        </div>
-
-        <div class="project-card">
-            <h3>Python Automation Scripts</h3>
-            <p>Simple automation tools created for daily tasks.</p>
-        </div>
-
-    </div>
-</section>
-
-<style>
-.project-card {
-    background: rgba(255,255,255,0.1);
-    padding: 25px;
-    border-radius: 12px;
-    transition: 0.3s;
-}
-.project-card:hover {
-    background: rgba(255,255,255,0.2);
-    transform: translateY(-5px);
-}
-</style>
-
-  <footer class="site-footer">
-    <div class="container">© <span id="year"></span> Sidhant Singh Manral — Built as a student project</div>
-  </footer>
-  <section id="about" style="padding: 80px 0; background: #0c183a; color: #fff; text-align:center;">
-    <h2 style="font-size: 40px; margin-bottom: 20px;">About Me</h2>
-    <p style="max-width: 700px; margin: auto; line-height: 1.8; font-size: 18px;">
-        Hi! I'm <strong>Sidhant Singh Manral</strong>, a student at 
-        <strong>Fr. Conceicao Rodrigues College of Engineering</strong> passionate about 
-        technology, creativity, and building projects that make an impact.  
-        I love learning new skills, exploring innovative ideas, and continuously improving myself.
+  <!-- About Section -->
+  <section id="about" class="section dark">
+    <h2 class="section-title">About Me</h2>
+    <p class="section-text">
+      Hi! I'm <strong>Sidhant Singh Manral</strong>, a student at 
+      <strong>Fr. Conceicao Rodrigues College of Engineering</strong> passionate about 
+      technology, creativity, and building projects that make an impact.
+      I love learning new skills, exploring innovative ideas, and continuously improving myself.
     </p>
-</section>
+  </section>
 
+  <!-- Skills Section -->
+  <section id="skills" class="section light">
+    <h2 class="section-title">Skills</h2>
+    
+    <div class="grid">
+      <div class="card">HTML</div>
+      <div class="card">CSS</div>
+      <div class="card">JavaScript</div>
+      <div class="card">Python</div>
+      <div class="card">Problem Solving</div>
+      <div class="card">Communication</div>
+    </div>
+  </section>
 
+  <!-- Projects Section -->
+  <section id="projects" class="section dark">
+    <h2 class="section-title">Projects</h2>
+
+    <div class="grid">
+      <div class="card project">
+        <h3>Portfolio Website</h3>
+        <p>A responsive personal website built using HTML, CSS, and JS.</p>
+      </div>
+
+      <div class="card project">
+        <h3>Python Automation Scripts</h3>
+        <p>Simple automation tools created for daily tasks.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Resume Section -->
+  <section id="resume" class="section light center">
+    <h2 class="section-title">Resume</h2>
+    <a href="YOUR_RESUME.pdf" class="btn resume-btn">Download Resume</a>
+  </section>
+
+  <!-- Gallery Section -->
+  <section id="gallery" class="section dark">
+    <h2 class="section-title">Gallery</h2>
+
+    <div class="grid gallery-grid">
+      <img src="img/photo1.jpg" class="gallery-img">
+      <img src="img/photo2.jpg" class="gallery-img">
+      <img src="img/photo3.jpg" class="gallery-img">
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section light center">
+    <h2 class="section-title">Contact</h2>
+    <p class="section-text">Feel free to reach out to me!</p>
+
+    <div class="social-links bigger">
+      <a href="https://www.linkedin.com/in/YOUR_LINK">LinkedIn</a>
+      <a href="https://www.instagram.com/YOUR_USER">Instagram</a>
+      <a href="mailto:YOUR_EMAIL@gmail.com">Email</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    © <span id="year"></span> Sidhant Singh Manral — Built as a student project
+  </footer>
+
+  <!-- Scripts -->
   <script src="script.js"></script>
 </body>
 </html>
-
-
-
-
-
-
-
-
