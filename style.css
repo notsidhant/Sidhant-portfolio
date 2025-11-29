@@ -1,20 +1,21 @@
+/* IMPORT FONT */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
 }
 
-body{
+body {
     background: #070707;
     color: #ffffff;
     overflow-x: hidden;
 }
 
-/* NAVBAR */
-.navbar{
+/* ================= NAVBAR ================= */
+.navbar {
     position: fixed;
     top: 0;
     width: 100%;
@@ -22,25 +23,25 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: rgba(0,0,0,0.4);
+    background: rgba(0, 0, 0, 0.4);
     backdrop-filter: blur(10px);
     z-index: 1000;
 }
 
-.logo{
+.logo {
     font-size: 1.8rem;
     font-weight: 700;
     color: #0affff;
     text-shadow: 0 0 10px #0affff;
 }
 
-.nav-links{
+.nav-links {
     list-style: none;
     display: flex;
     gap: 30px;
 }
 
-.nav-links a{
+.nav-links a {
     text-decoration: none;
     color: #ffffff;
     font-size: 1rem;
@@ -48,15 +49,14 @@ body{
 }
 
 .nav-links a:hover,
-.nav-links .active{
+.nav-links .active {
     color: #0affff;
     text-shadow: 0 0 10px #0affff;
 }
 
-/* HERO SECTION */
-.hero{
+/* ================= HERO ================= */
+.hero {
     height: 100vh;
-    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -64,27 +64,29 @@ body{
     padding: 0 20px;
 }
 
-.hero-content h1{
+.hero-content h1 {
     font-size: 3rem;
     font-weight: 700;
 }
 
-.hero-content span{
+.hero-content span {
     color: #0affff;
-    text-shadow: 0 0 15px #09f3f3;
+    text-shadow: 0 0 15px #0affff;
 }
 
-.hero-content p{
+.hero-content p {
     margin-top: 10px;
     font-size: 1.2rem;
+    opacity: 0.85;
 }
 
-.sub{
+.sub {
     font-size: 1rem;
-    opacity: 0.7;
+    opacity: 0.6;
 }
 
-.btn{
+/* ================= BUTTON ================= */
+.btn {
     display: inline-block;
     margin-top: 25px;
     padding: 12px 30px;
@@ -99,14 +101,14 @@ body{
     text-shadow: 0 0 10px #0affff;
 }
 
-.btn:hover{
+.btn:hover {
     background: #0affff;
     color: #000;
     box-shadow: 0 0 20px #0affff;
 }
 
-/* PARTICLE BACKGROUND */
-canvas#particles{
+/* ================= PARTICLE BACKGROUND ================= */
+#particles {
     position: fixed;
     top: 0;
     left: 0;
